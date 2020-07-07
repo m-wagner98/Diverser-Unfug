@@ -1,5 +1,3 @@
-apple.com
-configuration.apple.com
 www.icloud.com
 static.gc.apple.com
 guzzoni.apple.com
