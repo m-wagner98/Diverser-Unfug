@@ -1,2 +1,2 @@
 # Diverser-Unfug
-Stuff den kein Mensch braucht
+Blockierlisten für das Pi-Hole
