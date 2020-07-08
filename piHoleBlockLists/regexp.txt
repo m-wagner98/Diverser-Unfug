@@ -9,4 +9,4 @@ teennudetube
 thexxxteen
 xnxx
 youjizzdeutsch
-.*(porn)[^/]*
+.*(porn).*(\.de|\.com\.net).*
