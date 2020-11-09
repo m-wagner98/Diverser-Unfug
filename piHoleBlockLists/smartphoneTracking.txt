@@ -3,7 +3,6 @@ static.gc.apple.com
 guzzoni.apple.com
 gateway.icloud.com
 icloud.com
-setup.icloud.com
 xp.apple.com
 keyvalueservices.fe.apple-dns.net
 ssl.gsp64.apple.com
