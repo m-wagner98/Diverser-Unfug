@@ -3,6 +3,7 @@ deinesexfilme
 gutesexfilme
 maturegirltube
 nachbarsexnetzwerk
+perfectgirls
 onehourparty
 schooxy
 teennudetube
@@ -11,3 +12,4 @@ xnxx
 youjizzdeutsch
 xhcdn
 .*(porn).*(\.+).*
+(\.porn$|\.sex$|\.xxx$|\.sexy$|\.webcam$|\.cam$|\.tube$|\.adult$|\.gay$)
