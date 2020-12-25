@@ -1,0 +1,8 @@
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list
+https://adaway.org/hosts.txt
+https://v.firebog.net/hosts/Easylist.txt
+https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
+https://raw.githubusercontent.com/m-wagner98/Diverser-Unfug/master/piHoleBlockLists/anit-porn.txt
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/MS-Office-Telemetry
+https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt
