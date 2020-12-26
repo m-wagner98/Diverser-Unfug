@@ -38,7 +38,7 @@ print('Starte Websuche...')
 query = input('Suchwort: ')
 
 links = open('links.txt', 'w')
-htmlLinks = search(query, num=200, stop=200, pause=0.5)
+htmlLinks = search(query, num_results=200)
 # Alle Links aus der Antwort in eine Datei schreiben
 for link in htmlLinks:
     links.write(link + "\n")
@@ -57,5 +57,6 @@ for bjorn in domains:
 ergebnisListe.close()
 
 print('Fertig!')
+print('Insgesamt ' + len(htmlLinks).__str__() + ' Suchergebnisse von Google bekommen' )
 print(len(domains).__str__() + ' neue Domains gefunden!')
 print('Bjorn Liste liegt im aktuellen Verzeichnis.')
