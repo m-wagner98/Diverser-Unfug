@@ -12,8 +12,9 @@ int main(void) {
         if (counter == 50) { // reset (Zahl willkürlich)
           x = 5;
           y = 5;
+          counter = 0;
         }
-        Sleep(6000);
+        Sleep(30000);
     }
     return 0;
 }
