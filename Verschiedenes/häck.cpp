@@ -4,17 +4,21 @@ int main(void) {
     int x,y, counter;
     x = 5;
     y = 5;
-    counter = 0;
     while(true) {
-        SetCursorPos(x,y);
-        x += 1;
-        y += 1;
-        if (counter == 50) { // reset (Zahl willkürlich)
-          x = 5;
-          y = 5;
-          counter = 0;
+        counter = 0;
+        while (counter < 150) {
+          // bisschen die Maus bewegen...
+          x += 5;
+          y += 5;
+          SetCursorPos(x,y);
+          Sleep(50);
+          counter ++;
         }
-        Sleep(30000);
+        // Cursor an ursprüngliche Position...
+        x = 5;
+        y = 5;
+        SetCursorPos(x,y);
+        Sleep(10000);
     }
     return 0;
 }
