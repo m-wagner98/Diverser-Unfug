@@ -29,7 +29,7 @@ int main()
 	  // Release the "A" key
 	  ip.ki.dwFlags = KEYEVENTF_KEYUP; // KEYEVENTF_KEYUP for key release
 	  SendInput(1, &ip, sizeof(INPUT));
-    Sleep(5000);
+    	  Sleep(5000);
   }
   
 	return 0;
