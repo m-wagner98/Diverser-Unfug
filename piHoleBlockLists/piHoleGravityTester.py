@@ -52,8 +52,8 @@ links.close()
 
 # Schreibe verbliebene eindeutige Werte in neue Datei
 ergebnisListe = open('ergebnis.txt', 'w')
-for bjorn in domains:
-    ergebnisListe.write(bjorn + '\n')
+for domain in domains:
+    ergebnisListe.write(domain + '\n')
 ergebnisListe.close()
 
 print('Fertig!')
