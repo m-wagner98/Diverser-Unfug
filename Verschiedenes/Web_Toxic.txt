@@ -1,0 +1,9 @@
+## HTB Toxic
+
+- Quellcode der index.php verrät, dass es ein LFI Schwachstelle gibt: include_once "${name}.php"
+- Der Parameter 'name' wird aus dem User-Cookie ausgelesen und enthält den Dateinamen
+- Cookie ist base 64 codiert -> decodieren, Dateinamen ändern und wieder codieren
+- Log Poisoning: PHP Webshell Payload in den User-Agent schreiben, shell command als GET Parameter mitsenden
+- Flag befindet sich in /flag_<random> (siehe entrypoint.sh)
+- auslesen mit: cat /flag_*
+
